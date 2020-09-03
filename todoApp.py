@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
-app.config['SECRET_KEY'] = 'nuibwugbfih309u3r09jc9f3r924ug0j'
+app.config['SECRET_KEY'] = '========SECRET_KEY============'
 
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
